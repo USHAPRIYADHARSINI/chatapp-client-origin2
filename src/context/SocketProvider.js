@@ -14,7 +14,7 @@ export function SocketProvider({id, children}) {
     const [socket, setSocket] = useState()
 
     useEffect(() => {
-        const newSocket = io('SOCKET_URL',
+        const newSocket = io(`${process.env.REACT_APP_SOCKET_URL}`,
         {auth: {
             token: id
           }}

@@ -26,7 +26,7 @@ function ResetPassword() {
     })
 
     let resetpasswordUser = (pwd) => {
-        fetch(`${process.env.RENDER_URL}/users/${email}/${token}`,{
+        fetch(`${process.env.REACT_APP_RENDER_URL}/users/${email}/${token}`,{
           method:"POST",
           body: JSON.stringify(pwd),
           headers: {

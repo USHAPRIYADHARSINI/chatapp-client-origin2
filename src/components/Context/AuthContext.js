@@ -10,7 +10,7 @@ export function AuthContextprovider({children}) {
 useEffect(() => {
     let email = localStorage.getItem("email")
     if(email){
-      fetch(`${process.env.RENDER_URL}/users/getdetails/${email}`)
+      fetch(`${process.env.REACT_APP_RENDER_URL}/users/getdetails/${email}`)
       .then((data) => data.json())
       .then((data) => {setUser(data)})
     }

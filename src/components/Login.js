@@ -39,7 +39,7 @@ function Login() {
  })
  
  let addList = (loginUser) => {
-     fetch(`${process.env.RENDER_URL}/users/login`,{
+     fetch(`${process.env.REACT_APP_RENDER_URL}/users/login`,{
          method:"POST",
          body: JSON.stringify(loginUser),
          headers: {

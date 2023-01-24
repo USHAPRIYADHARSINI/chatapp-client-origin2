@@ -30,7 +30,7 @@ function Signup() {
 
 })
   let addList = (newUser) => {
-    fetch(`${process.env.RENDER_URL}/users/signup`,{
+    fetch(`${process.env.REACT_APP_RENDER_URL}/users/signup`,{
         method:"POST",
         body: JSON.stringify(newUser),
         headers: {

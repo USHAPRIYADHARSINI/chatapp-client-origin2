@@ -27,7 +27,7 @@ function Forgotpassword() {
         }
     })
     let forgotpasswordUser = (cred) => {
-        fetch(`${process.env.RENDER_URL}/users/forgotpassword`,{
+        fetch(`${process.env.REACT_APP_RENDER_URL}/users/forgotpassword`,{
             method:"POST",
             body: JSON.stringify(cred),
             headers: {
